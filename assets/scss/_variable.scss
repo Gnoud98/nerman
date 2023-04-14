@@ -414,9 +414,7 @@ a {
   transform: translateX(100%);
   transition: 0.5s;
   padding: 24px 16px 30px 16px;
-  @include Responsive(XL) {
-    display: none;
-  }
+
   &.menu-mobile-active {
     transform: translate(0);
   }

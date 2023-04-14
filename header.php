@@ -97,7 +97,7 @@ include "libs/header-css.php";
             </div>
         </div>
     </div>
-    <div class="menu-mobile d-flex flex-column">
+    <div class="menu-mobile d-lg-none d-flex flex-column">
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div class="title-menu">
                 MENU

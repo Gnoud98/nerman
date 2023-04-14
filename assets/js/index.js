@@ -4,6 +4,7 @@
       menuMobile();
       backToTop();
       showSearch();
+      showContentFooter();
     });
   };
 })(jQuery);
@@ -75,11 +76,47 @@ function backToTop() {
 }
 
 function showSearch() {
-  if ($(".search-icon").length && $(window).width() > 991 ) {
+  if ($(".search-icon").length && $(window).width() > 991) {
     $(".search-icon").click(function () {
-      $(".box-search").toggleClass('active');
+      $(".box-search").toggleClass("active");
+    });
+  }
+}
+
+function showContentFooter() {
+  if ($(".footer-title").length && $(window).width() < 991) {
+    $(".footer-title").click(function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("active");
+      $(this)
+        .parent()
+        .parent()
+        .siblings()
+        .find(".footer-title")
+        .removeClass("active")
+        .next()
+        .slideUp();
     });
   }
 
-}
+  if ($(".footer-language").length || $(".footer-currency").length) {
+    $(".current-item").click(function (e) {
+      e.stopPropagation();
+      $(this).toggleClass("active").next(".list-item").toggleClass("active");
+      $(this)
+        .parent()
+        .siblings()
+        .find(".current-item")
+        .removeClass("active")
+        .next(".list-item")
+        .removeClass("active");
+    });
+  }
 
+  $(document).on("click", function(e) {
+    if ($(e.target).is(".footer__bottom .list-item") === false) {
+      $(".footer__bottom .list-item,.current-item").removeClass("active");
+    }
+  });
+
+}
