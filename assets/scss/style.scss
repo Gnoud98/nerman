@@ -76,10 +76,47 @@ body {
     }
     &__main {
         padding: 1.7rem 0;
+        &-logo {
+            img {
+                max-width: 210px;
+                @include Responsive(SM) {
+                    max-width: 138px;
+                }
+            }
+        }
         &-nav,
         &-right {
+            position: relative;
             > ul {
                 @extend %flex-center;
+                .cart-icon {
+                    @include Responsive(MD) {
+                        svg {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+            .box-search {
+                position: absolute;
+                left: 0;
+                bottom: -9rem;
+                width: 270px;
+                background-color: #ffffff;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
+                 @extend %smooth-trans;
+                 &.active{
+                    bottom: -7rem;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 2;
+                 }
+                @include Responsive(MD) {
+                    display: none;
+                }
             }
         }
         &-nav {
@@ -145,7 +182,7 @@ body {
                             height: 2px;
                             background-color: var(--primary-color);
                             content: "";
-                            bottom: 0;
+                            bottom: -4px;
                             @extend %smooth-trans;
                             left: 50%;
                             transform: translateX(-50%);
@@ -178,7 +215,7 @@ body {
     &__bottom {
         background: #fafafb;
         border-top: 1px solid #f0f0f0;
-        
+
         &-content {
             font-weight: 300;
             text-transform: uppercase;
@@ -201,7 +238,7 @@ body {
                 &::-webkit-scrollbar-thumb {
                     -webkit-border-radius: 10px;
                     border-radius: 10px;
-                    background: #6d6d6d; 
+                    background: #6d6d6d;
                 }
                 li {
                     scroll-snap-align: start;
@@ -210,6 +247,32 @@ body {
                         margin-right: 6rem;
                     }
                 }
+            }
+        }
+    }
+}
+.box-search {
+    @include Responsive(MD) {
+        margin-bottom: 36px;
+    }
+
+    form {
+        border: 1px solid #cbcbcb;
+        border-radius: 6px;
+        height: 52px;
+        padding: 12px 16px;
+        max-width: 100%;
+        button {
+            margin-right: 10px;
+        }
+        input {
+            height: 100%;
+            border: none;
+            color: var(--text-color);
+            flex: 1;
+            &::placeholder {
+                color: #a7a7a7;
+                text-transform: uppercase;
             }
         }
     }

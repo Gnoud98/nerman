@@ -7,7 +7,6 @@
     });
   };
 })(jQuery);
-new WOW().init();
 function menuMobile() {
   if (
     $(".bar__mb").length ||
@@ -76,10 +75,11 @@ function backToTop() {
 }
 
 function showSearch() {
-  if ($(".search-icon").length) {
+  if ($(".search-icon").length && $(window).width() > 991 ) {
     $(".search-icon").click(function () {
-      $(this).next("form").slideToggle();
+      $(".box-search").toggleClass('active');
     });
   }
+
 }
 
