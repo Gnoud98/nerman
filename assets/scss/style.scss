@@ -247,8 +247,8 @@ body {
                     &:not(:last-child) {
                         margin-right: 6rem;
                     }
-                    a{
-                        &:hover{
+                    a {
+                        &:hover {
                             text-decoration: underline;
                         }
                     }
@@ -442,14 +442,14 @@ body {
             border-radius: 10px;
             width: 14rem;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-             @extend %smooth-trans;
-             opacity: 0;
-             visibility: hidden;
-             &.active{
+            @extend %smooth-trans;
+            opacity: 0;
+            visibility: hidden;
+            &.active {
                 top: -120px;
                 opacity: 1;
                 visibility: visible;
-             }
+            }
             &:after {
                 clip-path: polygon(50% 100%, 0 29%, 100% 29%);
                 position: absolute;
@@ -461,11 +461,11 @@ body {
                 background-color: #ffffff;
             }
             li {
-                &:first-child{
-                    border-radius: 10px 10px 0 0
+                &:first-child {
+                    border-radius: 10px 10px 0 0;
                 }
-                &:last-child{
-                    border-radius: 0 0 10px 10px
+                &:last-child {
+                    border-radius: 0 0 10px 10px;
                 }
                 @extend %smooth-trans;
                 padding: 7px 1rem;
@@ -481,18 +481,18 @@ body {
     &-language {
         margin-right: 3.6rem;
     }
-    &-currency{
+    &-currency {
         @include Responsive(XL) {
-            .list-item{
+            .list-item {
                 right: 0;
-                &:after{
+                &:after {
                     right: 12px;
                     left: unset;
                 }
             }
         }
     }
-    &__bottom{
+    &__bottom {
         padding-top: 24px;
         padding-bottom: 41px;
         @include Responsive(XL) {
@@ -500,6 +500,330 @@ body {
         }
         @include Responsive(MD) {
             padding-bottom: 49px;
+        }
+    }
+}
+
+.banner__home {
+    position: relative;
+    &-img {
+        img {
+            width: 100%;
+            object-fit: cover;
+            -o-object-fit: cover;
+            @include Responsive(XL) {
+                max-height: 85vh;
+                height: 100%;
+            }
+            @media only screen and (min-width: 768px) {
+                margin-top: -1px;
+            }
+        }
+    }
+    &-content {
+        color: #ffffff;
+        padding-top: 15rem;
+        position: relative;
+        z-index: 2;
+        @include Responsive(MD) {
+            background: linear-gradient(89.16deg, #232323 0.02%, #313131 108.33%);
+            padding-top: 7rem;
+        }
+        @include Responsive(XL) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            .content {
+                max-width: 656px;
+            }
+        }
+        .sup-title,
+        .banner-title {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .sup-title {
+            font-size: 12px;
+            letter-spacing: 4.44789px;
+            line-height: 2;
+            @include Responsive(XL) {
+                letter-spacing: 8.5px;
+                font-size: 20px;
+            }
+        }
+        .banner-title {
+            font-size: 8.4rem;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            @include Responsive(SM) {
+                font-size: 48px;
+                letter-spacing: 0.523282px;
+            }
+        }
+        .sub-title {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 30px;
+            @include Responsive(SM) {
+                font-size: 14px;
+                margin-top: 15px;
+            }
+        }
+        .banner-btn {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 22px;
+            margin-top: 4.8rem;
+            @include Responsive(SM) {
+                font-size: 16px;
+                margin-top: 30px;
+            }
+            a {
+                display: inline-block;
+                border-radius: 8px;
+                padding: 1.5rem 3rem;
+                @extend %smooth-trans;
+                &.colletion-btn {
+                    background-color: #ffffff;
+                    color: #080a07;
+                    margin-right: 1rem;
+                    border: 1px solid transparent;
+                    &:hover {
+                        background-color: unset;
+                        color: #ffffff;
+                        border: 1px solid #ffffff;
+                    }
+                }
+                &.buynow-btn {
+                    color: #ffffff;
+                    border: 1px solid #ffffff;
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #080a07;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//section new products
+
+.new_product {
+    padding: 9.5rem 0;
+    @include Responsive(SM) {
+        padding: 5rem 0;
+    }
+    .box-count-down {
+        @include Responsive(XL) {
+            margin-left: 4rem;
+        }
+        @include Responsive(MD) {
+            width: 100%;
+        }
+        span {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 700;
+            margin-right: 8px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            line-height: 1;
+            @include Responsive(SM) {
+                font-size: 22px;
+            }
+        }
+    }
+}
+.heading-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4.8rem;
+    @include Responsive(XL) {
+        line-height: 2;
+    }
+    @include Responsive(SM) {
+        font-size: 28px;
+    }
+}
+
+.btn-viewmore {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: underline !important;
+    line-height: 1.7;
+    font-size: 20px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.17168 7.00023L0.22168 2.05023L1.63568 0.63623L7.99968 7.00023L1.63568 13.3642L0.22168 11.9502L5.17168 7.00023Z' fill='%23121212'/%3E%3C/svg%3E%0A");
+    @include Responsive(MD) {
+        font-size: 14px;
+        background-position: right 3px;
+        margin-top: 7px;
+    }
+}
+
+.new_product {
+    &-item{
+        &:hover{
+            .new_product-top{
+                background: #d8d6d6;
+            }
+        }
+    }
+    &-list{
+        margin-top: 4rem;
+    }
+    &-img {
+        padding-top: 100%;
+        position: relative;
+        display: block;
+        width: 100%;
+        @include Responsive(SM) {
+            padding-top: 110%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            max-width: 63%;
+            max-height: 250px;
+            margin: auto;
+            @include Responsive(SM) {
+                max-width: 65%;
+                max-height: 120px;
+            }
+        }
+    }
+    &-top {
+        position: relative;
+        width: 100%;
+        display: block;
+        padding-top: 108%;
+        background: #f5f5f5;
+        overflow: hidden;
+         @extend %smooth-trans;
+        @include Responsive(SM) {
+            padding-top: 120%;
+        }
+        .inner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .discount {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #f4da40;
+            color: #ed2a16;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 4px 10px;
+            @include Responsive(SM) {
+                font-size: 12px;
+                top: 8px;
+                right: 8px;
+                line-height: 1;
+            }
+        }
+        .promotion {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            .date,
+            .text {
+                padding: 10px 15px;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 20px;
+                display: inline-block;
+                @media(max-width:1300px){
+                    font-size: 16px;
+                    padding: 8px;
+                }
+                @include Responsive(SM) {
+                    font-size: 12.5px;
+                    padding: 4px;
+                }
+            }
+            .date {
+                background: #ed2a16;
+            }
+            .text {
+                background-size: 100%;
+                padding-right: 50px;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='203' height='52' viewBox='0 0 203 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H203L166.5 52H0V0Z' fill='%2328A79C'/%3E%3C/svg%3E%0A");
+                @media(max-width:1300px){
+                    padding-right: 35px;
+                }
+                @include Responsive(SM) {
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+    &-bottom {
+        .price {
+            text-align: center;
+            color: #ed2a16;
+            line-height: 1;
+            font-weight: 700;
+            padding: 15px 0;
+            font-size: 4.8rem;
+            @include Responsive(SM) {
+                font-size: 23px;
+            }
+        }
+        .product-sold {
+            background: #fdbba4;
+            border-radius: 100px;
+            position: relative;
+            height: 37px;
+            @include Responsive(SM) {
+                height: 18px;
+            }
+            .sold {
+                color: #ffffff;
+                position: absolute;
+                height: 100%;
+                text-align: right;
+                background: #ed2a16;
+                border-radius: 100px;
+                padding-right: 30px;
+                line-height: 37px;
+                font-size: 16px;
+                 text-transform: uppercase;
+                @include Responsive(SM) {
+                    line-height: 18px;
+                    font-size: 11px;
+                }
+            }
         }
     }
 }

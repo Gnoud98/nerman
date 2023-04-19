@@ -661,13 +661,13 @@ a {
 }
 
 .scroll-snap {
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-  }
-  .item {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    .item {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
   }
 }
