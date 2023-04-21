@@ -5,7 +5,7 @@
       backToTop();
       showSearch();
       showContentFooter();
-      setCounterData();
+      customFilterBox();
     });
   };
 })(jQuery);
@@ -163,3 +163,26 @@ $(function() {
     setCounterData(count, $(".box-count-down"));
   }, 1000);
 });
+
+
+
+function storePage() {
+  if ($(window).width() < 992) {
+    let bannerContent = $('.banner__store .inner');
+    $(bannerContent).appendTo('.store__property .container')
+  }
+  let storePropetyHeight= $('.store__property').outerHeight();
+  $('.store__property').css({marginTop: -(storePropetyHeight/2) + "px"});
+}
+storePage();
+
+function customFilterBox() {
+  $('.box-filter-chosen').on('click', function(){
+    $('.box-filter-list').toggleClass('active');
+  });
+  $('.box-filter-list li').on('click', function(){
+    var itemFilter = $(this).data('filter');
+    $('.box-filter-chosen ').text($(this).text()).attr('data-filter', itemFilter);
+    $('.box-filter-list').toggleClass('active');
+  });
+}

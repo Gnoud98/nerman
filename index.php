@@ -302,10 +302,11 @@ include "header.php";
                             <div class="partner__item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="partner__item-img">
                                     <picture>
-                                      <source media="(max-width:767px)" srcset="./assets/images/partner1-mb.png">
-                                      <img src="./assets/images/partner1.png" alt="">
+                                        <source media="(max-width:767px)"
+                                            srcset="./assets/images/partner1-mb.png">
+                                        <img src="./assets/images/partner1.png" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="partner__item-title">
                                     Our<br>Achievements
@@ -315,9 +316,10 @@ include "header.php";
                         <div class="col-md-6">
                             <div class="partner__item wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="partner__item-img">
-                                <picture>
-                                      <source media="(max-width:767px)" srcset="./assets/images/partner2-mb.png">
-                                      <img src="./assets/images/partner2.png" alt="">
+                                    <picture>
+                                        <source media="(max-width:767px)"
+                                            srcset="./assets/images/partner2-mb.png">
+                                        <img src="./assets/images/partner2.png" alt="">
                                     </picture>
                                 </div>
                                 <div class="partner__item-title">
@@ -328,6 +330,20 @@ include "header.php";
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="news-letter text-center bg-black text-white">
+        <div class="container">
+            <h3 class="title wow fadeInUp">
+                Tham gia bản tin của chúng tôi.
+            </h3>
+            <p class="sub-title wow fadeInUp" data-wow-delay="0.2s">
+                Giảm giá lớn và ngay vào hộp thư đến của bạn.
+            </p>
+            <form action="" method="post" class="wow fadeInUp" data-wow-delay="0.4s">
+                <input type="text" placeholder="Địa chỉ email">
+                <button type="submit">Nộp</button>
+            </form>
         </div>
     </section>
 </main>
