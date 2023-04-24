@@ -7,10 +7,10 @@ include "header.php";
         <div class="banner__home-content">
             <div class="container">
                 <div class="content">
-                    <p class="sup-title wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="sup-title wow fadeInUp font-brandon" data-wow-delay="0.1s">
                         Thương hiệu nam
                     </p>
-                    <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="banner-title wow fadeInUp font-brandon" data-wow-delay="0.3s">
                         Sản phẩm nam cho mọi nhà.
                     </h1>
                     <p class="sub-title wow fadeInUp" data-wow-delay="0.5s">
@@ -18,7 +18,7 @@ include "header.php";
                         kiểu
                         lựa chọn của chúng tôi để bạn lựa chọn.
                     </p>
-                    <div class="banner-btn">
+                    <div class="banner-btn font-brandon">
                         <a href="" class="colletion-btn wow fadeInUp" data-wow-delay="0.7s">
                             Xem Bộ sưu tập
                         </a>
@@ -264,6 +264,207 @@ include "header.php";
         </div>
 
 
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="d-lg-flex justify-content-between align-items-lg-center">
+                <div class="wow fadeInUp"
+                    data-wow-delay="0.2s">
+                    <h2 class="heading-title">
+                        Phản hồi khách hàng.
+                    </h2>
+
+                </div>
+                <a href="#" class="btn-viewmore wow fadeInUp d-lg-block d-none" data-wow-delay="0.4s">
+                    Xem tất cả
+                </a>
+            </div>
+            <div class="feedback__list mt-5 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="feedback__list-left">
+                    <div class="feedback__list-main">
+                        <div class="feedback__list-item">
+                            <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                                <div class="feedback-img">
+                                    <img src="./assets/images/fb1.png" alt="">
+                                </div>
+                            </a>
+                            <div class="feedback-product">
+                                <div class="img">
+                                    <img src="./assets/images/product.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="name">
+                                        Kensho Pants
+                                    </p>
+                                    <div class="price">
+                                        ₫699.00
+                                    </div>
+                                </div>
+                                <a href="" class="addcart">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                                <div class="feedback-img">
+                                    <img src="./assets/images/fb2.png" alt="">
+                                </div>
+                            </a>
+                            <div class="feedback-product">
+                                <div class="img">
+                                    <img src="./assets/images/product.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="name">
+                                        Kensho Pants testtt
+                                    </p>
+                                    <div class="price">
+                                        ₫699.00
+                                    </div>
+                                </div>
+                                <a href="" class="addcart">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                                <div class="feedback-img">
+                                    <img src="./assets/images/fb3.png" alt="">
+                                </div>
+                            </a>
+                            <div class="feedback-product">
+                                <div class="img">
+                                    <img src="./assets/images/product.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="name">
+                                        Kensho Pants
+                                    </p>
+                                    <div class="price">
+                                        ₫699.00
+                                    </div>
+                                </div>
+                                <a href="" class="addcart">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                                <div class="feedback-img">
+                                    <img src="./assets/images/fb4.png" alt="">
+                                </div>
+                            </a>
+                            <div class="feedback-product">
+                                <div class="img">
+                                    <img src="./assets/images/product.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="name">
+                                        Kensho Pants
+                                    </p>
+                                    <div class="price">
+                                        ₫699.00
+                                    </div>
+                                </div>
+                                <a href="" class="addcart">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                                <div class="feedback-img">
+                                    <img src="./assets/images/fb5.png" alt="">
+                                </div>
+                            </a>
+                            <div class="feedback-product">
+                                <div class="img">
+                                    <img src="./assets/images/product.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="name">
+                                        Kensho Pants
+                                    </p>
+                                    <div class="price">
+                                        ₫699.00
+                                    </div>
+                                </div>
+                                <a href="" class="addcart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__list-nav d-lg-block d-none">
+                        <div class="feedback__list-item">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="feedback__list-item">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__list-right">
+                    <div class="feedback__list-item">
+                        <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb6.png" alt="">
+                            </div>
+                        </a>
+                        <div class="feedback-product">
+                            <div class="img">
+                                <img src="./assets/images/product.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">
+                                    Kensho Pants
+                                </p>
+                                <div class="price">
+                                    ₫699.00
+                                </div>
+                            </div>
+                            <a href="" class="addcart">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="feedback__list-item">
+                        <a href="https://youtu.be/uEnrwSkVr6Q" data-fancybox="feedback">
+                            <div class="feedback-img">
+                                <img src="./assets/images/fb7.png" alt="">
+                            </div>
+                        </a>
+                        <div class="feedback-product">
+                            <div class="img">
+                                <img src="./assets/images/product.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">
+                                    Kensho Pants testtt
+                                </p>
+                                <div class="price">
+                                    ₫699.00
+                                </div>
+                            </div>
+                            <a href="" class="addcart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-viewmore wow fadeInUp d-lg-none d-inline-block mt-5" data-wow-delay="0.4s">
+                    Xem tất cả
+                </a>
+        </div>
     </section>
     <section class="partner">
         <div class="container">

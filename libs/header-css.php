@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/fe-library/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/fe-library/flickity.min.css">
     <link rel="stylesheet" href="./assets/fe-library/animate.min.css">
+    <link rel="stylesheet" href="./assets/fe-library/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/scss/style.css">
     <title>Home</title>
 </head>

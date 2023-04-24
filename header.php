@@ -25,7 +25,17 @@ include "libs/header-css.php";
             <div class="header__main-nav d-lg-block d-none">
                 <ul>
                     <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Cửa hàng</a></li>
+                    <li class="menu-item-has-children"><a href="#">Cửa hàng</a>
+                    <ul class="sub-menu">
+                    <li><a href="">perspiciatis</a></li>
+                    <li><a href="">architecto</a></li>
+                    <li><a href="">dolorem</a></li>
+                    <li><a href="">voluptatem</a></li>
+                    <li><a href="">voluptatem</a></li>
+                    <li><a href="">voluptatem</a></li>
+                    <li><a href="">voluptatem</a></li>
+                </ul>
+                </li>
                     <li><a href="#">Sản phẩm</a></li>
                     <li class="menu-item-has-children">
                         <a href="#">Blog</a>
@@ -82,7 +92,7 @@ include "libs/header-css.php";
             </div>
         </div>
     </div>
-    <div class="header__bottom d-lg-block d-none">
+    <div class="header__bottom d-none">
         <div class="container">
             <div class="header__bottom-content">
                 <ul>
