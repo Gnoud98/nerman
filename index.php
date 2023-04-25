@@ -56,8 +56,7 @@ include "header.php";
                     Xem tất cả
                 </a>
             </div>
-            <div class="new_product-list wow fadeInUp" data-wow-delay="0.6s">
-                <div class="row scroll-snap gx-5">
+            <div class="new_product-list wow fadeInUp" data-wow-delay="0.6s" data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": true, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
 
                     <div class="col-lg-3 col-6 item">
                         <a class="new_product-item d-flex flex-column " href="#">
@@ -219,8 +218,87 @@ include "header.php";
                             </div>
                         </a>
                     </div>
+                    <div class="col-lg-3 col-6 item">
+                        <a class="new_product-item d-flex flex-column " href="#">
+                            <div class="new_product-top">
+                                <div class="inner">
+                                    <div class="new_product-img">
+                                        <img src="./assets/images/pro-img1.png" alt="">
+                                    </div>
 
-                </div>
+                                    <span class="discount">
+                                        GIẢM GIÁ 44%
+                                    </span>
+                                    <div class="promotion d-flex">
+                                        <span class="date">
+                                            15.03
+                                        </span>
+                                        <span class="text">
+                                            FREE DELIVERY
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="new_product-bottom mt-auto">
+                                <div class="price">
+                                    ₫699.00
+                                </div>
+                                <div class="product-sold">
+                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                    <div style="width:80%" class="sold">
+                                        <span>
+                                            10
+                                        </span>
+                                        <span>
+                                            Đã bán
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6 item">
+                        <a class="new_product-item d-flex flex-column " href="#">
+                            <div class="new_product-top">
+                                <div class="inner">
+                                    <div class="new_product-img">
+                                        <img src="./assets/images/pro-img2.png" alt="">
+                                    </div>
+
+                                    <span class="discount">
+                                        GIẢM GIÁ 44%
+                                    </span>
+                                    <div class="promotion d-flex">
+                                        <span class="date">
+                                            15.03
+                                        </span>
+                                        <span class="text">
+                                            FREE DELIVERY
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="new_product-bottom mt-auto">
+                                <div class="price">
+                                    ₫699.00
+                                </div>
+                                <div class="product-sold">
+                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                    <div style="width:80%" class="sold">
+                                        <span>
+                                            10
+                                        </span>
+                                        <span>
+                                            Đã bán
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
             </div>
         </div>
     </section>

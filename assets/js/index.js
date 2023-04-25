@@ -8,7 +8,6 @@
       customFilterBox();
       customFeedBack();
       stuckHeader();
-
     });
   };
 })(jQuery);
@@ -181,7 +180,7 @@ $(function () {
 });
 
 function storePage() {
-  if ($(window).width() < 992) {
+  if ($(window).width() < 767) {
     let bannerContent = $(".banner__store .inner");
     $(bannerContent).appendTo(".store__property .container");
   }
@@ -189,6 +188,50 @@ function storePage() {
   $(".store__property").css({ marginTop: -(storePropetyHeight / 2) + "px" });
 }
 storePage();
+
+function changeLayoutStorePage() {
+  if (localStorage.getItem("changeLayout") == "5-col") {
+    $(".list__product > .row")
+      .removeClass("row-cols-lg-4")
+      .addClass("row-cols-lg-5");
+  }
+
+  $(".toolbar__box-layout .5-col").click(function () {
+    localStorage.setItem("changeLayout", "5-col");
+    $(".list__product > .row")
+      .removeClass("row-cols-lg-4")
+      .addClass("row-cols-lg-5");
+
+    $(".toolbar__box-layout li").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".toolbar__box-layout .4-col").click(function () {
+    localStorage.setItem("changeLayout", "4-col");
+    $(".list__product > .row")
+      .removeClass("row-cols-lg-5")
+      .addClass("row-cols-lg-4");
+    $(".toolbar__box-layout li").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  if ($(".list__product > .row").hasClass("row-cols-lg-5")) {
+    $(".toolbar__box-layout .5-col").addClass("active");
+    $(".toolbar__box-layout .4-col").removeClass("active");
+  } else {
+    $(".list__product > .row").removeClass("active");
+    $(".toolbar__box-layout .4-col").addClass("active");
+  }
+
+  $(".toolbar__box-layout li").click(function () {
+    $(".loader-wrapper").addClass("active");
+    if ($(".loader-wrapper").hasClass("active")) {
+      setTimeout(function () {
+        $(".loader-wrapper").removeClass("active");
+      }, 600);
+    }
+  });
+}
+changeLayoutStorePage();
 
 function customFilterBox() {
   $(".box-filter-chosen").on("click", function () {
@@ -244,3 +287,17 @@ function customFeedBack() {
     },
   });
 }
+
+function sliderCategoryMb() {
+  if ($(window).width()< 992) {
+    var totalWidth = $(".list-category-mb").outerWidth()
+
+    $('.list-category-mb ul').css('width', totalWidth);
+  
+      var myScrollPos = $('.current-menu-item').offset().left + $('.current-menu-item').outerWidth(true) / 2 + $('.list-category-mb ul').scrollLeft() - $('.list-category-mb ul').width() / 2;
+  
+  
+      $('.list-category-mb ul').scrollLeft(myScrollPos);
+  }
+}
+sliderCategoryMb();
