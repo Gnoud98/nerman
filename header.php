@@ -26,16 +26,16 @@ include "libs/header-css.php";
                 <ul>
                     <li><a href="#">Trang chủ</a></li>
                     <li class="menu-item-has-children"><a href="#">Cửa hàng</a>
-                    <ul class="sub-menu">
-                    <li><a href="">perspiciatis</a></li>
-                    <li><a href="">architecto</a></li>
-                    <li><a href="">dolorem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                </ul>
-                </li>
+                        <ul class="sub-menu">
+                            <li><a href="">perspiciatis</a></li>
+                            <li><a href="">architecto</a></li>
+                            <li><a href="">dolorem</a></li>
+                            <li><a href="">voluptatem</a></li>
+                            <li><a href="">voluptatem</a></li>
+                            <li><a href="">voluptatem</a></li>
+                            <li><a href="">voluptatem</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Sản phẩm</a></li>
                     <li class="menu-item-has-children">
                         <a href="#">Blog</a>
@@ -83,12 +83,12 @@ include "libs/header-css.php";
                     </li>
                 </ul>
                 <div class="box-search" id="box-search">
-                            <form action="" class="d-flex align-items-center">
-                                <button type="submit">
-                                    <?php echo svg('search', '28','28') ?></button>
-                                <input type="text" placeholder="Search">
-                            </form>
-                        </div>
+                    <form action="" class="d-flex align-items-center">
+                        <button type="submit">
+                            <?php echo svg('search', '28','28') ?></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -173,6 +173,162 @@ include "libs/header-css.php";
             </div>
         </div>
     </div>
+    <div class="mini__cart active">
+        <div class="mini__cart-inner">
+            <div class="mini__cart-steps">
+                <div class="mini__cart-steps-title">
+                    <strong>₫6</strong> from free economy shipping
+                </div>
+                <ul>
+                    <li class="active">
+                        <span>
+                            Economy
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            2-4 days
+                        </span>
+                    </li>
+                    <li>
 
+                    </li>
+                </ul>
+            </div>
+            <div class="mini__cart-content">
+                <div class="mini__cart-title">
+                    Giỏ hàng <span>(2)</span>
+                </div>
+                <div class="mini__cart-list">
+                    <?php 
+                     for ($i = 0; $i < 3; $i++) {
+                     ?>
+                    <div class="mini__cart-item d-flex">
+                        <a href="" class="item__image">
+                            <img src="./assets/images/quickview1.png" alt="">
+                        </a>
+                        <div class="item__info">
+                            <p class="item__info-name">
+                                <a href="#">Luxury Kanzo Shoes</a>
+                            </p>
+                            <div class="item__info-swatch">
+                                <span>Size: 2XL</span>, <span>Color: Green</span>
+                            </div>
+                            <div
+                                class="item__info-bottom d-flex justify-content-between align-items-center flex-wrap">
+                                <form action="" method="post">
+
+                                    <div class="quantity d-flex align-items-center">
+                                        <button type="button" class="minus">-</button>
+                                        <input type="number" class="qty" id="" value="1" min="1"
+                                            max="100000">
+                                        <button type="button" class="plus">+</button>
+                                    </div>
+
+                                </form>
+
+                                <div class="item__info-price d-flex align-items-center">
+                                    <span class="price">
+                                        $80.00
+                                    </span>
+                                    <a href="javascript:void(0)" class="item-remove"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php 
+                     } 
+                    ?>
+                </div>
+                <div class="mini__cart-coupon">
+                    <form action="">
+                        <input type="text" placeholder="INPUT">
+                        <button type="submit">Apply</button>
+                    </form>
+                </div>
+                <div class="mini__cart-total">
+                    <table>
+                        <tr>
+                            <td>
+                                Giá gốc
+                            </td>
+                            <td>
+                                $160.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Khuyến mãi
+                            </td>
+                            <td>
+                                $60.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phí ship
+                            </td>
+                            <td>
+                                $12.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tổng
+                            </td>
+                            <td>
+                                <strong>$222.00</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>
+                                    Mua tiếp
+                                </button>
+                            </td>
+                            <td>
+                                <button type="submit">
+                                    Thanh toán
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mini__cart-related">
+                    <div class="mini__cart-list"
+                        data-flickity='{ "draggable": true,"wrapAround": true,"imagesLoaded": true,"prevNextButtons": true, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":3000}'>
+                      <?php 
+                       for ($i = 0; $i < 4; $i++) {
+                       ?>
+                       <div class="col w-50">
+                           <div class="product-item">
+                               <a href="#">
+                                   <div class="product-img c-img">
+                                       <img src="./assets/images/pro2.png" alt="">
+                                   </div>
+                                   <div class="product-desc">
+                                       <div class="product-name">
+                                           Saralla Shirt
+                                       </div>
+                                       <div class="product-price">
+                                           <ins>$47.00</ins>
+                                           <del>$99.00</del>
+                                       </div>
+                                   </div>
+                               </a>
+
+
+                           </div>
+                       </div>
+                      
+                        <?php 
+                       } 
+                      ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="overlay"></div>
 </header>

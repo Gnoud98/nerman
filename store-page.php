@@ -130,7 +130,7 @@ include "header.php";
                     </div>
                     <!-- product-item -->
                     <?php 
-                     for ($i = 0; $i < 3; $i++) {
+                     for ($i = 0; $i < 4; $i++) {
                      ?>
                     <div class="col">
                         <div class="product-item">
@@ -218,6 +218,18 @@ include "header.php";
 
         </div>
     </section>
+    <section class="get-started text-center bg-black text-white">
+        <div class="container">
+            <h3 class="title wow fadeInUp">
+                Try for yourself. <br>
+                get everything you need.
+            </h3>
+            <a href="" class="btn-start wow fadeInUp" data-wow-delay="0.2s">
+            Get Started Now
+            </a>
+        </div>
+    </section>
+
     <div class="loader-wrapper">
         <div class="loader"></div>
     </div>
