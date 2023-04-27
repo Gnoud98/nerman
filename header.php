@@ -64,7 +64,7 @@ include "libs/header-css.php";
                         </a>
                     </li>
                     <li class="cart-icon">
-                        <a href="">
+                        <a href="javascript:void(0)">
                             <?php echo svg('cart', '28','28') ?>
                         </a>
                     </li>
@@ -173,7 +173,7 @@ include "libs/header-css.php";
             </div>
         </div>
     </div>
-    <div class="mini__cart active">
+    <div class="mini__cart">
         <div class="mini__cart-inner">
             <div class="mini__cart-steps">
                 <div class="mini__cart-steps-title">
@@ -275,13 +275,13 @@ include "libs/header-css.php";
                         </tr>
                         <tr>
                             <td>
-                                Tổng
+                                <strong>Tổng</strong>
                             </td>
                             <td>
                                 <strong>$222.00</strong>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="action">
                             <td>
                                 <button>
                                     Mua tiếp
@@ -296,8 +296,11 @@ include "libs/header-css.php";
                     </table>
                 </div>
                 <div class="mini__cart-related">
-                    <div class="mini__cart-list"
-                        data-flickity='{ "draggable": true,"wrapAround": true,"imagesLoaded": true,"prevNextButtons": true, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":3000}'>
+                    <h4 class="title">
+                    Buy more for better deal
+                    </h4>
+                    <div class="mini__cart-list-product"
+                        data-flickity='{ "draggable": true,"wrapAround": true,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                       <?php 
                        for ($i = 0; $i < 4; $i++) {
                        ?>
@@ -329,6 +332,7 @@ include "libs/header-css.php";
                 </div>
             </div>
         </div>
+        <span class="close-cart-btn"></span>
     </div>
     <div class="overlay"></div>
 </header>
