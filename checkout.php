@@ -40,6 +40,8 @@ include "header.php";
                                             <label for="">Province/City</label>
                                             <select name="" id="">
                                                 <option value="">City</option>
+                                                <option value="">Ha Noi</option>
+                                                <option value="">HCM</option>
                                             </select>
                                         </div>
                                         <div class="col-6">
@@ -52,7 +54,7 @@ include "header.php";
                                 </div>
                                 <div class="form-group">
                                     <label for="">Additional Note</label>
-                                    <input type="text" placeholder="Add additional Notes">
+                                    <textarea placeholder="Add additional Notes"></textarea>
                                 </div>
                             </form>
                         </div>

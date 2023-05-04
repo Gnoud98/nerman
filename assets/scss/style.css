@@ -224,7 +224,8 @@ th {
 /*# sourceMappingURL=reset.css.map */
 .overlay, .scale-hover img, .hazo-pagination ul li a:hover, .header__main-right .box-search, .header__main-nav ul > li.menu-item-has-children .sub-menu, .header__main-nav ul > li.menu-item-has-children .sub-menu li, .header__main-nav ul > li a::after, .footer-social ul li a, .footer-language .list-item, .footer-currency .list-item, .footer-language .list-item li, .footer-currency .list-item li, .banner__home-content .banner-btn a, .new_product-top, .list__category-item .btn-buy a, .fancybox-caption__body .addcart, .get-started .btn-start, .product-img, .loader-wrapper, .product__detail-addtocart .single_add_to_cart_button, .modal-product .form-group input,
 .modal-product .form-group textarea, .modal-product .form-group button, .modal-product .list-share li a, .modal-product .list-share li a:hover, .product__description .view-more::after, .product__sticky, .mini__cart-total table tr.action button, .checkout__shipping .form-group input,
-.checkout__shipping .form-group select, .checkout__payment .form-group, .checkout__summary .checkout-coupon form button, .checkout__summary-bottom button {
+.checkout__shipping .form-group select,
+.checkout__shipping .form-group textarea, .checkout__payment .form-group, .checkout__summary .checkout-coupon form button, .checkout__summary-bottom button, .promotion__menu ul li a, .promotion__content-name:after, .promotion__content-name:before {
   -webkit-transition: 0.4s ease-out 0s;
   -moz-transition: 0.4s ease-out 0s;
   -ms-transition: 0.4s ease-out 0s;
@@ -385,7 +386,8 @@ a {
   z-index: 9999;
   transform: translateX(100%);
   transition: 0.5s;
-  padding: 24px 16px 30px 16px; }
+  padding: 24px 16px 30px 16px;
+  display: none; }
   .menu-mobile.menu-mobile-active {
     transform: translate(0); }
   .menu-mobile .title-menu {
@@ -703,7 +705,7 @@ body {
       font-size: 12px; } }
 .header__main {
   position: relative; }
-  .header__main.header-active {
+  .header__main.header-active:not(.remove-sticky) {
     position: fixed;
     width: 100%;
     left: 0;
@@ -2972,7 +2974,8 @@ body {
       font-size: 16px;
       margin-bottom: 5px; }
     .checkout__shipping .form-group input,
-    .checkout__shipping .form-group select {
+    .checkout__shipping .form-group select,
+    .checkout__shipping .form-group textarea {
       width: 100%;
       background: #ffffff;
       border: 1px solid #cbcbcb;
@@ -2982,11 +2985,13 @@ body {
       font-size: 16px;
       font-weight: 500; }
       .checkout__shipping .form-group input:focus,
-      .checkout__shipping .form-group select:focus {
+      .checkout__shipping .form-group select:focus,
+      .checkout__shipping .form-group textarea:focus {
         border-color: #000000;
         outline: none; }
       .checkout__shipping .form-group input::placeholder,
-      .checkout__shipping .form-group select::placeholder {
+      .checkout__shipping .form-group select::placeholder,
+      .checkout__shipping .form-group textarea::placeholder {
         color: #a7a7a7; }
     .checkout__shipping .form-group select {
       -webkit-appearance: none;
@@ -2994,6 +2999,9 @@ body {
       background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.77344 9L12.7734 15L18.7734 9' stroke='%23121212' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
       background-position: 97%;
       background-repeat: no-repeat; }
+    .checkout__shipping .form-group textarea {
+      min-height: 52px;
+      overflow: hidden; }
   .checkout__payment .form-group {
     display: -webkit-box;
     display: -moz-box;
@@ -3133,7 +3141,7 @@ body {
     padding: 0;
     border: 0; }
   .checkout__summary-desc {
-    color: #807E7E;
+    color: #807e7e;
     font-weight: 500;
     font-size: 14px; }
     .checkout__summary-desc a {
@@ -3173,5 +3181,165 @@ input[type="radio"] {
 input[type="radio"]:checked {
   box-shadow: inset 0 0 0 2px #fff;
   background-color: #000; }
+
+.promotion {
+  margin: 5rem 0; }
+  @media only screen and (max-width: 767px) {
+    .promotion {
+      margin: 3rem 0; } }
+  @media only screen and (min-width: 992px) {
+    .promotion__menu {
+      padding: 3rem;
+      background: #fafafb;
+      border-radius: 8px;
+      height: 100%; }
+      .promotion__menu-inner {
+        position: sticky;
+        top: 3rem; } }
+  .promotion__menu-title {
+    font-family: "SVN-Brandon Grotesque";
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 767px) {
+      .promotion__menu-title {
+        font-size: 24px; } }
+  @media only screen and (min-width: 992px) {
+    .promotion__menu ul li {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e3e3e3; } }
+  .promotion__menu ul li a {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500; }
+    @media only screen and (max-width: 767px) {
+      .promotion__menu ul li a {
+        font-size: 16px; } }
+    @media only screen and (min-width: 992px) {
+      .promotion__menu ul li a {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+        .promotion__menu ul li a::before {
+          width: 25px;
+          height: 3px;
+          background-color: var(--primary-color);
+          content: "";
+          margin-right: 15px;
+          -webkit-transition: all 0.4s ease-out 0s;
+          -moz-transition: all 0.4s ease-out 0s;
+          -ms-transition: all 0.4s ease-out 0s;
+          -o-transition: all 0.4s ease-out 0s;
+          transition: all 0.4s ease-out 0s; }
+        .promotion__menu ul li a.active {
+          font-weight: 700; }
+          .promotion__menu ul li a.active::before {
+            width: 54px; } }
+  @media only screen and (max-width: 991px) {
+    .promotion__menu ul {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */ }
+      .promotion__menu ul::-webkit-scrollbar {
+        display: none; }
+      .promotion__menu ul li {
+        padding-bottom: 2rem; }
+        .promotion__menu ul li a {
+          white-space: nowrap;
+          display: inline-block;
+          margin-right: 3rem;
+          position: relative; }
+          .promotion__menu ul li a.active {
+            font-weight: 700; }
+            .promotion__menu ul li a.active::after {
+              position: absolute;
+              width: 42px;
+              height: 2px;
+              background-color: var(--primary-color);
+              content: "";
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: -2px; }
+      .promotion__menu ul.is-sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 2.5rem 15px;
+        background-color: #ffffff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+        .promotion__menu ul.is-sticky li {
+          padding-bottom: 0; } }
+  .promotion__content-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-family: "SVN-Brandon Grotesque"; }
+    @media only screen and (max-width: 767px) {
+      .promotion__content-title {
+        font-size: 24px; } }
+  .promotion__content-item {
+    padding: 2rem 3rem;
+    background: #fafafb;
+    border-radius: 8px;
+    border: 1px solid transparent; }
+    .promotion__content-item:not(:last-child) {
+      margin-bottom: 14px; }
+    .promotion__content-item .desc {
+      display: none;
+      font-weight: 300;
+      font-size: 17px; }
+      @media only screen and (max-width: 767px) {
+        .promotion__content-item .desc {
+          font-size: 15px; } }
+    .promotion__content-item.active {
+      border: 1px solid #b9b9b9; }
+      .promotion__content-item.active .promotion__content-name:after {
+        transform: rotate(180deg); }
+  .promotion__content-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.4rem;
+    cursor: pointer;
+    position: relative; }
+    .promotion__content-name:after, .promotion__content-name:before {
+      position: absolute;
+      cursor: pointer;
+      display: inline-block;
+      width: 2rem;
+      height: 2px;
+      background-color: var(--primary-color);
+      border-radius: 5px;
+      content: "";
+      right: 0;
+      top: 1.8rem; }
+    .promotion__content-name:after {
+      transform: rotate(90deg); }
+    @media only screen and (max-width: 767px) {
+      .promotion__content-name {
+        font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
