@@ -4,7 +4,7 @@ include "header.php";
 
 
 <main>
-    <section class="banner__about" style="background-image:url(./assets/images/bg-about.png)">
+    <section class="banner__page" style="background-image:url(./assets/images/bg-about.png)">
         <div class="container text-center">
             <p class="sup-title text-uppercase wow fadeInUp" data-wow-delay="0.2s">
                 About Us

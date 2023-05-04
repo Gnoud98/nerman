@@ -1650,35 +1650,107 @@ body {
         width: 100%;
         object-fit: cover; }
 
-.banner__about {
+.banner__page {
   padding: 3rem 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   font-weight: 700;
   font-family: "SVN-Brandon Grotesque"; }
   @media only screen and (min-width: 992px) {
-    .banner__about {
+    .banner__page {
       min-height: 45rem; } }
   @media only screen and (max-width: 767px) {
-    .banner__about {
+    .banner__page {
       background-position: right; } }
-  .banner__about .sup-title {
+  @media only screen and (max-width: 991px) {
+    .banner__page.banner__article {
+      min-height: auto; } }
+  .banner__page .sup-title {
     font-size: 20px; }
     @media only screen and (max-width: 767px) {
-      .banner__about .sup-title {
+      .banner__page .sup-title {
         font-size: 12px; } }
-  .banner__about .main-title {
+  .banner__page .main-title {
     font-size: 6.4rem;
     max-width: 812px;
     margin: auto;
     line-height: 1.2; }
     @media only screen and (max-width: 767px) {
-      .banner__about .main-title {
+      .banner__page .main-title {
         font-size: 4.8rem; } }
+  .banner__page .breadcrumb {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .banner__page .breadcrumb .breadcrumb-item {
+      text-transform: none;
+      font-family: "SVN-MuseoSans"; }
+  .banner__page .page-title {
+    font-weight: 500;
+    font-size: 4.8rem;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 767px) {
+      .banner__page .page-title {
+        font-size: 4rem; } }
+  .banner__page .sub-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-family: "SVN-MuseoSans";
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 3rem;
+    color: #3e3e59; }
+  .banner__page .news-search form {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden; }
+    .banner__page .news-search form input {
+      font-family: "SVN-MuseoSans";
+      border: none;
+      -webkit-box: 1;
+      -moz-box: 1;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      height: 52px;
+      padding: 0px 16px; }
+      .banner__page .news-search form input::placeholder {
+        color: #a7a7a7;
+        font-size: 16px;
+        font-weight: 300; }
+    .banner__page .news-search form button {
+      padding: 0 16px; }
 
 .about__item:nth-child(3n + 1) .about__item-content {
   background-color: #ffffff; }
@@ -3341,5 +3413,22 @@ input[type="radio"]:checked {
     @media only screen and (max-width: 767px) {
       .promotion__content-name {
         font-size: 20px; } }
+
+.article__new-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+  .article__new-list .article__item:first-child {
+    grid-area: 1 / 1 / 5 / 4; }
+  .article__new-list .article__item:nth-child(2) {
+    grid-area: 1 / 4 / 2 / 6; }
+  .article__new-list .article__item:nth-child(3) {
+    grid-area: 2 / 4 / 3 / 6; }
+  .article__new-list .article__item:nth-child(4) {
+    grid-area: 3 / 4 / 4 / 6; }
+  .article__new-list .article__item:nth-child(5) {
+    grid-area: 4 / 4 / 5 / 6; }
 
 /*# sourceMappingURL=style.css.map */

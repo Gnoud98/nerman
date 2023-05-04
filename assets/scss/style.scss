@@ -1319,11 +1319,11 @@ body {
 }
 
 //about-us
-.banner__about {
+.banner__page {
     padding: 3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -1334,6 +1334,11 @@ body {
     }
     @include Responsive(SM) {
         background-position: right;
+    }
+    &.banner__article {
+        @include Responsive(MD) {
+            min-height: auto;
+        }
     }
     .sup-title {
         font-size: 20px;
@@ -1348,6 +1353,57 @@ body {
         line-height: 1.2;
         @include Responsive(SM) {
             font-size: 4.8rem;
+        }
+    }
+    .breadcrumb {
+        @include justify-content(center);
+        .breadcrumb-item {
+            text-transform: none;
+            font-family: "SVN-MuseoSans";
+        }
+    }
+    .page-title {
+        font-weight: 500;
+        font-size: 4.8rem;
+        text-transform: uppercase;
+        @include Responsive(SM) {
+            font-size: 4rem;
+        }
+    }
+    .sub-title {
+        font-size: 1.8rem;
+        font-weight: 300;
+        font-family: "SVN-MuseoSans";
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 3rem;
+        color: #3e3e59;
+    }
+    .news-search {
+        form {
+            @include flexbox();
+            @include align-items(center);
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 6px;
+            overflow: hidden;
+            input {
+                font-family: "SVN-MuseoSans";
+                border: none;
+                @include flex(1);
+                height: 52px;
+                padding: 0px 16px;
+                &::placeholder {
+                    color: #a7a7a7;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+            button {
+                padding: 0 16px;
+            }
         }
     }
 }
@@ -3141,10 +3197,10 @@ input[type="radio"]:checked {
                     top: 0;
                     z-index: 1000;
                     width: 100%;
-                    padding:2.5rem 15px;
+                    padding: 2.5rem 15px;
                     background-color: #ffffff;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                    li{
+                    li {
                         padding-bottom: 0;
                     }
                 }
@@ -3212,6 +3268,33 @@ input[type="radio"]:checked {
             }
             @include Responsive(SM) {
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+.article__new {
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .article__item{
+            &:first-child{
+                grid-area: 1 / 1 / 5 / 4;
+            }
+            &:nth-child(2){
+                grid-area: 1 / 4 / 2 / 6;
+            }
+            &:nth-child(3){
+                grid-area: 2 / 4 / 3 / 6;
+            }
+            &:nth-child(4){
+                grid-area: 3 / 4 / 4 / 6;
+            }
+            &:nth-child(5){
+                grid-area: 4 / 4 / 5 / 6;
             }
         }
     }
