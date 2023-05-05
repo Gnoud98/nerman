@@ -18,37 +18,37 @@ include "libs/header-css.php";
     <div class="header__main">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="header__main-logo">
-                <a href="">
+                <a href="index.php">
                     <img src="./assets/images/logo.png" alt="">
                 </a>
             </div>
             <div class="header__main-nav d-lg-block d-none">
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li class="menu-item-has-children"><a href="#">Cửa hàng</a>
+                    <li class="menu-item-has-children"><a href="#">Trang chủ</a>
                         <ul class="sub-menu">
-                            <li><a href="">perspiciatis</a></li>
-                            <li><a href="">architecto</a></li>
-                            <li><a href="">dolorem</a></li>
-                            <li><a href="">voluptatem</a></li>
-                            <li><a href="">voluptatem</a></li>
-                            <li><a href="">voluptatem</a></li>
-                            <li><a href="">voluptatem</a></li>
+                            <li><a href="about-us.php">About Us</a></li>
+                            <li><a href="store-page.php">Store Page</a></li>
+                            <li><a href="product-detail.php">Product Detail</a></li>
+                            <li><a href="checkout.php">Check out</a></li>
+                            <li><a href="promotion.php">Promotion</a></li>
+                            <li><a href="post-category.php">Blog</a></li>
+                            <li><a href="post-detail.php">Blog detail</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Blog</a>
+                    <li><a href="store-page.php">Cửa hàng</a>
+                       
+                    </li>
+                    <li class="menu-item-has-children"><a href="product-detail.php">Sản phẩm</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="">test</a>
-                            </li>
-                            <li>
-                                <a href="">test</a>
-                            </li>
-                            <li>
-                                <a href="">test</a>
-                            </li>
+                            <li><a href="product-detail.php">Product Detail</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="post-category.php">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="post-detail.php">Blog Detail</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -297,34 +297,34 @@ include "libs/header-css.php";
                 </div>
                 <div class="mini__cart-related">
                     <h4 class="title">
-                    Buy more for better deal
+                        Buy more for better deal
                     </h4>
                     <div class="mini__cart-list-product"
                         data-flickity='{ "draggable": true,"wrapAround": true,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
-                      <?php 
+                        <?php 
                        for ($i = 0; $i < 4; $i++) {
                        ?>
-                       <div class="col w-50">
-                           <div class="product-item">
-                               <a href="#">
-                                   <div class="product-img c-img">
-                                       <img src="./assets/images/pro2.png" alt="">
-                                   </div>
-                                   <div class="product-desc">
-                                       <div class="product-name">
-                                           Saralla Shirt
-                                       </div>
-                                       <div class="product-price">
-                                           <ins>$47.00</ins>
-                                           <del>$99.00</del>
-                                       </div>
-                                   </div>
-                               </a>
+                        <div class="col w-50">
+                            <div class="product-item">
+                                <a href="#">
+                                    <div class="product-img c-img">
+                                        <img src="./assets/images/pro2.png" alt="">
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-name">
+                                            Saralla Shirt
+                                        </div>
+                                        <div class="product-price">
+                                            <ins>$47.00</ins>
+                                            <del>$99.00</del>
+                                        </div>
+                                    </div>
+                                </a>
 
 
-                           </div>
-                       </div>
-                      
+                            </div>
+                        </div>
+
                         <?php 
                        } 
                       ?>
