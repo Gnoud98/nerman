@@ -36,7 +36,7 @@ include "libs/header-css.php";
                         </ul>
                     </li>
                     <li><a href="store-page.php">Cửa hàng</a>
-                       
+
                     </li>
                     <li class="menu-item-has-children"><a href="product-detail.php">Sản phẩm</a>
                         <ul class="sub-menu">
@@ -92,21 +92,7 @@ include "libs/header-css.php";
             </div>
         </div>
     </div>
-    <div class="header__bottom d-none">
-        <div class="container">
-            <div class="header__bottom-content">
-                <ul>
-                    <li><a href="">perspiciatis</a></li>
-                    <li><a href="">architecto</a></li>
-                    <li><a href="">dolorem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                    <li><a href="">voluptatem</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     <div class="menu-mobile d-lg-none d-flex flex-column">
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div class="title-menu">
@@ -124,21 +110,31 @@ include "libs/header-css.php";
         </div>
         <div class="main-menu">
             <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Cửa hàng</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
+                <li class="menu-item-has-children"><a href="#">Trang chủ</a>
                     <ul class="sub-menu">
-                        <li>
-                            <a href="">test</a>
-                        </li>
-                        <li>
-                            <a href="">test</a>
-                        </li>
-                        <li>
-                            <a href="">test</a>
-                        </li>
+                        <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="store-page.php">Store Page</a></li>
+                        <li><a href="product-detail.php">Product Detail</a></li>
+                        <li><a href="checkout.php">Check out</a></li>
+                        <li><a href="promotion.php">Promotion</a></li>
+                        <li><a href="post-category.php">Blog</a></li>
+                        <li><a href="post-detail.php">Blog detail</a></li>
+                    </ul>
+                </li>
+                <li><a href="store-page.php">Cửa hàng</a>
+
+                </li>
+                <li class="menu-item-has-children"><a href="product-detail.php">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="product-detail.php">Product Detail</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="post-category.php">Blog</a>
+                    <ul class="sub-menu">
+                        <li><a href="post-detail.php">Blog Detail</a></li>
+
                     </ul>
                 </li>
             </ul>
