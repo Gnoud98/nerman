@@ -56,248 +56,249 @@ include "header.php";
                     Xem tất cả
                 </a>
             </div>
-            <div class="new_product-list wow fadeInUp" data-wow-delay="0.6s" data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": true, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
+            <div class="new_product-list wow fadeInUp" data-wow-delay="0.6s"
+                data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": true, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
 
-                    <div class="col-lg-3 col-6 item">
-                        <a class="new_product-item d-flex flex-column " href="#">
-                            <div class="new_product-top">
-                                <div class="inner">
-                                    <div class="new_product-img">
-                                        <img src="./assets/images/pro-img1.png" alt="">
-                                    </div>
+                <div class="col-lg-3 col-6 item">
+                    <a class="new_product-item d-flex flex-column " href="#">
+                        <div class="new_product-top">
+                            <div class="inner">
+                                <div class="new_product-img">
+                                    <img src="./assets/images/pro-img1.png" alt="">
+                                </div>
 
-                                    <span class="discount">
-                                        GIẢM GIÁ 44%
+                                <span class="discount">
+                                    GIẢM GIÁ 44%
+                                </span>
+                                <div class="promotion d-flex">
+                                    <span class="date">
+                                        15.03
                                     </span>
-                                    <div class="promotion d-flex">
-                                        <span class="date">
-                                            15.03
-                                        </span>
-                                        <span class="text">
-                                            FREE DELIVERY
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="new_product-bottom mt-auto">
-                                <div class="price">
-                                    ₫699.00
-                                </div>
-                                <div class="product-sold">
-                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
-                                    <div style="width:80%" class="sold">
-                                        <span>
-                                            10
-                                        </span>
-                                        <span>
-                                            Đã bán
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-6 item">
-                        <a class="new_product-item d-flex flex-column " href="#">
-                            <div class="new_product-top">
-                                <div class="inner">
-                                    <div class="new_product-img">
-                                        <img src="./assets/images/pro-img2.png" alt="">
-                                    </div>
-
-                                    <span class="discount">
-                                        GIẢM GIÁ 44%
+                                    <span class="text">
+                                        FREE DELIVERY
                                     </span>
-                                    <div class="promotion d-flex">
-                                        <span class="date">
-                                            15.03
-                                        </span>
-                                        <span class="text">
-                                            FREE DELIVERY
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="new_product-bottom mt-auto">
-                                <div class="price">
-                                    ₫699.00
-                                </div>
-                                <div class="product-sold">
-                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
-                                    <div style="width:80%" class="sold">
-                                        <span>
-                                            10
-                                        </span>
-                                        <span>
-                                            Đã bán
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-6 item">
-                        <a class="new_product-item d-flex flex-column " href="#">
-                            <div class="new_product-top">
-                                <div class="inner">
-                                    <div class="new_product-img">
-                                        <img src="./assets/images/pro-img1.png" alt="">
-                                    </div>
 
-                                    <span class="discount">
-                                        GIẢM GIÁ 44%
+                        </div>
+                        <div class="new_product-bottom mt-auto">
+                            <div class="price">
+                                ₫699.00
+                            </div>
+                            <div class="product-sold">
+                                <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                <div style="width:80%" class="sold">
+                                    <span>
+                                        10
                                     </span>
-                                    <div class="promotion d-flex">
-                                        <span class="date">
-                                            15.03
-                                        </span>
-                                        <span class="text">
-                                            FREE DELIVERY
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="new_product-bottom mt-auto">
-                                <div class="price">
-                                    ₫699.00
-                                </div>
-                                <div class="product-sold">
-                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
-                                    <div style="width:80%" class="sold">
-                                        <span>
-                                            10
-                                        </span>
-                                        <span>
-                                            Đã bán
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-6 item">
-                        <a class="new_product-item d-flex flex-column " href="#">
-                            <div class="new_product-top">
-                                <div class="inner">
-                                    <div class="new_product-img">
-                                        <img src="./assets/images/pro-img2.png" alt="">
-                                    </div>
-
-                                    <span class="discount">
-                                        GIẢM GIÁ 44%
+                                    <span>
+                                        Đã bán
                                     </span>
-                                    <div class="promotion d-flex">
-                                        <span class="date">
-                                            15.03
-                                        </span>
-                                        <span class="text">
-                                            FREE DELIVERY
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="new_product-bottom mt-auto">
-                                <div class="price">
-                                    ₫699.00
-                                </div>
-                                <div class="product-sold">
-                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
-                                    <div style="width:80%" class="sold">
-                                        <span>
-                                            10
-                                        </span>
-                                        <span>
-                                            Đã bán
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-6 item">
-                        <a class="new_product-item d-flex flex-column " href="#">
-                            <div class="new_product-top">
-                                <div class="inner">
-                                    <div class="new_product-img">
-                                        <img src="./assets/images/pro-img1.png" alt="">
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <a class="new_product-item d-flex flex-column " href="#">
+                        <div class="new_product-top">
+                            <div class="inner">
+                                <div class="new_product-img">
+                                    <img src="./assets/images/pro-img2.png" alt="">
+                                </div>
 
-                                    <span class="discount">
-                                        GIẢM GIÁ 44%
+                                <span class="discount">
+                                    GIẢM GIÁ 44%
+                                </span>
+                                <div class="promotion d-flex">
+                                    <span class="date">
+                                        15.03
                                     </span>
-                                    <div class="promotion d-flex">
-                                        <span class="date">
-                                            15.03
-                                        </span>
-                                        <span class="text">
-                                            FREE DELIVERY
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="new_product-bottom mt-auto">
-                                <div class="price">
-                                    ₫699.00
-                                </div>
-                                <div class="product-sold">
-                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
-                                    <div style="width:80%" class="sold">
-                                        <span>
-                                            10
-                                        </span>
-                                        <span>
-                                            Đã bán
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-6 item">
-                        <a class="new_product-item d-flex flex-column " href="#">
-                            <div class="new_product-top">
-                                <div class="inner">
-                                    <div class="new_product-img">
-                                        <img src="./assets/images/pro-img2.png" alt="">
-                                    </div>
-
-                                    <span class="discount">
-                                        GIẢM GIÁ 44%
+                                    <span class="text">
+                                        FREE DELIVERY
                                     </span>
-                                    <div class="promotion d-flex">
-                                        <span class="date">
-                                            15.03
-                                        </span>
-                                        <span class="text">
-                                            FREE DELIVERY
-                                        </span>
-                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="new_product-bottom mt-auto">
+                            <div class="price">
+                                ₫699.00
+                            </div>
+                            <div class="product-sold">
+                                <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                <div style="width:80%" class="sold">
+                                    <span>
+                                        10
+                                    </span>
+                                    <span>
+                                        Đã bán
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <a class="new_product-item d-flex flex-column " href="#">
+                        <div class="new_product-top">
+                            <div class="inner">
+                                <div class="new_product-img">
+                                    <img src="./assets/images/pro-img1.png" alt="">
                                 </div>
 
-                            </div>
-                            <div class="new_product-bottom mt-auto">
-                                <div class="price">
-                                    ₫699.00
-                                </div>
-                                <div class="product-sold">
-                                    <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
-                                    <div style="width:80%" class="sold">
-                                        <span>
-                                            10
-                                        </span>
-                                        <span>
-                                            Đã bán
-                                        </span>
-                                    </div>
+                                <span class="discount">
+                                    GIẢM GIÁ 44%
+                                </span>
+                                <div class="promotion d-flex">
+                                    <span class="date">
+                                        15.03
+                                    </span>
+                                    <span class="text">
+                                        FREE DELIVERY
+                                    </span>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+
+                        </div>
+                        <div class="new_product-bottom mt-auto">
+                            <div class="price">
+                                ₫699.00
+                            </div>
+                            <div class="product-sold">
+                                <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                <div style="width:80%" class="sold">
+                                    <span>
+                                        10
+                                    </span>
+                                    <span>
+                                        Đã bán
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <a class="new_product-item d-flex flex-column " href="#">
+                        <div class="new_product-top">
+                            <div class="inner">
+                                <div class="new_product-img">
+                                    <img src="./assets/images/pro-img2.png" alt="">
+                                </div>
+
+                                <span class="discount">
+                                    GIẢM GIÁ 44%
+                                </span>
+                                <div class="promotion d-flex">
+                                    <span class="date">
+                                        15.03
+                                    </span>
+                                    <span class="text">
+                                        FREE DELIVERY
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="new_product-bottom mt-auto">
+                            <div class="price">
+                                ₫699.00
+                            </div>
+                            <div class="product-sold">
+                                <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                <div style="width:80%" class="sold">
+                                    <span>
+                                        10
+                                    </span>
+                                    <span>
+                                        Đã bán
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <a class="new_product-item d-flex flex-column " href="#">
+                        <div class="new_product-top">
+                            <div class="inner">
+                                <div class="new_product-img">
+                                    <img src="./assets/images/pro-img1.png" alt="">
+                                </div>
+
+                                <span class="discount">
+                                    GIẢM GIÁ 44%
+                                </span>
+                                <div class="promotion d-flex">
+                                    <span class="date">
+                                        15.03
+                                    </span>
+                                    <span class="text">
+                                        FREE DELIVERY
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="new_product-bottom mt-auto">
+                            <div class="price">
+                                ₫699.00
+                            </div>
+                            <div class="product-sold">
+                                <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                <div style="width:80%" class="sold">
+                                    <span>
+                                        10
+                                    </span>
+                                    <span>
+                                        Đã bán
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <a class="new_product-item d-flex flex-column " href="#">
+                        <div class="new_product-top">
+                            <div class="inner">
+                                <div class="new_product-img">
+                                    <img src="./assets/images/pro-img2.png" alt="">
+                                </div>
+
+                                <span class="discount">
+                                    GIẢM GIÁ 44%
+                                </span>
+                                <div class="promotion d-flex">
+                                    <span class="date">
+                                        15.03
+                                    </span>
+                                    <span class="text">
+                                        FREE DELIVERY
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="new_product-bottom mt-auto">
+                            <div class="price">
+                                ₫699.00
+                            </div>
+                            <div class="product-sold">
+                                <!-- lấy width theo sản phẩm bán đc / tổng sản phẩm -->
+                                <div style="width:80%" class="sold">
+                                    <span>
+                                        10
+                                    </span>
+                                    <span>
+                                        Đã bán
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -346,14 +347,14 @@ include "header.php";
     <section class="feedback">
         <div class="container">
             <div class="d-lg-flex justify-content-between align-items-lg-center">
-                <div class="wow fadeInUp"
-                    data-wow-delay="0.2s">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
                     <h2 class="heading-title">
                         Phản hồi khách hàng.
                     </h2>
 
                 </div>
-                <a href="#" class="btn-viewmore wow fadeInUp d-lg-block d-none" data-wow-delay="0.4s">
+                <a href="#" class="btn-viewmore wow fadeInUp d-lg-block d-none"
+                    data-wow-delay="0.4s">
                     Xem tất cả
                 </a>
             </div>
@@ -539,14 +540,15 @@ include "header.php";
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn-viewmore wow fadeInUp d-lg-none d-inline-block mt-5" data-wow-delay="0.4s">
-                    Xem tất cả
-                </a>
+            <a href="#" class="btn-viewmore wow fadeInUp d-lg-none d-inline-block mt-5"
+                data-wow-delay="0.4s">
+                Xem tất cả
+            </a>
         </div>
     </section>
     <section class="partner">
         <div class="container">
-            <div class="partner__content d-lg-flex d-block">
+            <div class="partner__content d-lg-flex d-none">
                 <div class="partner__content-list show" data-value="partner">
                     <div class="inner">
                         <h3 class="title wow fadeInUp">
@@ -557,13 +559,13 @@ include "header.php";
                             men who are so beguiled and demoralized by the charms of pleasure of the
                             moment
                         </div>
-                        <div class="list-parter wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="list-partner wow fadeInUp" data-wow-delay="0.4s">
                             <div class="row row-cols-4 g-md-5 g-2">
                                 <?php 
                                  for ($i = 0; $i < 12; $i++) {
                                  ?>
                                 <div class="col">
-                                    <div class="parter-img">
+                                    <div class="partner-img">
                                         <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
                                     </div>
                                 </div>
@@ -577,11 +579,7 @@ include "header.php";
                 </div>
                 <div class="partner__item" data-value="achievement">
                     <div class="partner__item-img">
-                        <picture>
-                            <source media="(max-width:767px)"
-                                srcset="./assets/images/partner1-mb.png">
-                            <img src="./assets/images/partner1.png" alt="">
-                        </picture>
+                        <img src="./assets/images/partner1.png" alt="">
 
                     </div>
                     <div class="partner__item-title">
@@ -598,13 +596,13 @@ include "header.php";
                             men who are so beguiled and demoralized by the charms of pleasure of the
                             moment
                         </div>
-                        <div class="list-parter wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="list-partner wow fadeInUp" data-wow-delay="0.4s">
                             <div class="row row-cols-4 g-md-5 g-2">
                                 <?php 
                                  for ($i = 0; $i < 12; $i++) {
                                  ?>
                                 <div class="col">
-                                    <div class="parter-img">
+                                    <div class="partner-img">
                                         <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
                                     </div>
                                 </div>
@@ -618,11 +616,8 @@ include "header.php";
                 </div>
                 <div class="partner__item" data-value="collaborator">
                     <div class="partner__item-img">
-                        <picture>
-                            <source media="(max-width:767px)"
-                                srcset="./assets/images/partner2-mb.png">
-                            <img src="./assets/images/partner2.png" alt="">
-                        </picture>
+
+                        <img src="./assets/images/partner2.png" alt="">
                     </div>
                     <div class="partner__item-title">
                         Our<br>Collaborators
@@ -638,13 +633,13 @@ include "header.php";
                             men who are so beguiled and demoralized by the charms of pleasure of the
                             moment
                         </div>
-                        <div class="list-parter wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="list-partner wow fadeInUp" data-wow-delay="0.4s">
                             <div class="row row-cols-4 g-md-5 g-2">
                                 <?php 
                                  for ($i = 0; $i < 12; $i++) {
                                  ?>
                                 <div class="col">
-                                    <div class="parter-img">
+                                    <div class="partner-img">
                                         <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
                                     </div>
                                 </div>
@@ -656,6 +651,97 @@ include "header.php";
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="partner__content d-lg-none d-block"
+                data-flickity='{ "draggable": true,"wrapAround": true,"imagesLoaded": true,"prevNextButtons": true, "pageDots": true, "cellAlign": "left","contain": true, "autoPlay":false}'>
+                <div class="partner__content-item w-100">
+                    <h3 class="title wow fadeInUp">
+                        Our Partner
+                    </h3>
+                    <div class="partner__item-img wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="./assets/images/partner1-mb.png" alt="">
+                    </div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.3s">
+                        On the other hand, we denounce with righteous indignation and dislike
+                        men who are so beguiled and demoralized by the charms of pleasure of the
+                        moment
+                    </div>
+                    <div class="list-partner wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="row row-cols-4 g-md-5 g-2">
+                            <?php 
+                                 for ($i = 0; $i < 12; $i++) {
+                                 ?>
+                            <div class="col">
+                                <div class="partner-img">
+                                    <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
+                                </div>
+                            </div>
+                            <?php 
+                                 } 
+                                ?>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="partner__content-item w-100">
+                    <h3 class="title wow fadeInUp">
+                        Our achievements
+                    </h3>
+                    <div class="partner__item-img wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="./assets/images/partner1-mb.png" alt="">
+                    </div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.3s">
+                        On the other hand, we denounce with righteous indignation and dislike
+                        men who are so beguiled and demoralized by the charms of pleasure of the
+                        moment
+                    </div>
+                    <div class="list-partner wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="row row-cols-4 g-md-5 g-2">
+                            <?php 
+                                 for ($i = 0; $i < 12; $i++) {
+                                 ?>
+                            <div class="col">
+                                <div class="partner-img">
+                                    <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
+                                </div>
+                            </div>
+                            <?php 
+                                 } 
+                                ?>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="partner__content-item w-100">
+                    <h3 class="title wow fadeInUp">
+                        Our collaborators
+                    </h3>
+                    <div class="partner__item-img wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="./assets/images/partner1-mb.png" alt="">
+                    </div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.3s">
+                        On the other hand, we denounce with righteous indignation and dislike
+                        men who are so beguiled and demoralized by the charms of pleasure of the
+                        moment
+                    </div>
+                    <div class="list-partner wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="row row-cols-4 g-md-5 g-2">
+                            <?php 
+                                 for ($i = 0; $i < 12; $i++) {
+                                 ?>
+                            <div class="col">
+                                <div class="partner-img">
+                                    <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
+                                </div>
+                            </div>
+                            <?php 
+                                 } 
+                                ?>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

@@ -579,16 +579,18 @@ function arrangeLayoutPostDetail() {
 arrangeLayoutPostDetail();
 
 function handleHoverPartner() {
-  $(".partner__item[data-value]").mouseenter(function () {
-    $(".partner__content-list[data-value]")
-      .removeClass("show");
-    $(".partner__content-list[data-value=" + $(this).attr("data-value") + "]")
-      .addClass("show");
-  });
-  $(".partner__content").mouseleave(function () {
-    $(".partner__content-list[data-value]")
-      .removeClass("show");
-    $(".partner__content-list[data-value='partner']")
-      .addClass("show");
-  });
+  if ($(window).width() > 991 && $('.partner__content').length) {
+    $(".partner__item[data-value]").mouseenter(function () {
+      $(".partner__content-list[data-value]")
+        .removeClass("show");
+      $(".partner__content-list[data-value=" + $(this).attr("data-value") + "]")
+        .addClass("show");
+    });
+    $(".partner__content").mouseleave(function () {
+      $(".partner__content-list[data-value]")
+        .removeClass("show");
+      $(".partner__content-list[data-value='partner']")
+        .addClass("show");
+    });
+  }
 }

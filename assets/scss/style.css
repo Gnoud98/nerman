@@ -2016,7 +2016,7 @@ body {
     padding: 26px 15px;
   }
 }
-.partner__content-list .title {
+.partner__content .title {
   text-transform: uppercase;
   font-size: 6.4rem;
   font-weight: 400;
@@ -2026,25 +2026,25 @@ body {
   font-family: "UTM Cafeta";
 }
 @media only screen and (max-width: 767px) {
-  .partner__content-list .title {
+  .partner__content .title {
     font-size: 28px;
   }
 }
-.partner__content-list .desc {
+.partner__content .desc {
   font-weight: 300;
   font-size: 20px;
   max-width: 583px;
 }
 @media only screen and (max-width: 767px) {
-  .partner__content-list .desc {
+  .partner__content .desc {
     font-size: 16px;
     font-weight: 300;
   }
 }
-.partner__content-list .list-parter {
+.partner__content .list-partner {
   margin-top: 6.4rem;
 }
-.partner__content-list .list-parter .parter-img {
+.partner__content .list-partner .partner-img {
   background: #f5f5f5;
   border-radius: 8px;
   text-align: center;
@@ -2055,13 +2055,36 @@ body {
   padding: 3.4rem 2rem;
 }
 @media only screen and (max-width: 767px) {
-  .partner__content-list .list-parter .parter-img {
+  .partner__content .list-partner .partner-img {
     padding: 15px;
   }
 }
-@media only screen and (min-width: 992px) {
-  .partner__content-right {
-    margin-left: 3rem;
+@media only screen and (max-width: 991px) {
+  .partner__content-item {
+    padding: 10rem 15px 26px 15px;
+  }
+  .partner__content-item .title {
+    font-family: "SVN-Brandon Grotesque";
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .partner__content-item .desc {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .partner__content .flickity-page-dots {
+    top: 20px;
+    bottom: unset;
+    padding: 10px;
+    background-color: var(--primary-color);
+  }
+  .partner__content .flickity-page-dots .dot {
+    background: #ffffff;
+    width: 25px;
+    height: 5px;
+    border-radius: 4px;
+    vertical-align: middle;
   }
 }
 .partner__item {
