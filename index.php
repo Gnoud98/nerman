@@ -547,12 +547,12 @@ include "header.php";
     <section class="partner">
         <div class="container">
             <div class="partner__content d-lg-flex d-block">
-                <div class="partner__content-left">
+                <div class="partner__content-list show" data-value="partner">
                     <div class="inner">
                         <h3 class="title wow fadeInUp">
-                            Những cộng sự của chúng ta
+                            Our Partner
                         </h3>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="desc wow fadeInUp" data-wow-delay="0.3s">
                             On the other hand, we denounce with righteous indignation and dislike
                             men who are so beguiled and demoralized by the charms of pleasure of the
                             moment
@@ -575,35 +575,83 @@ include "header.php";
                         </div>
                     </div>
                 </div>
-                <div class="partner__content-right">
-                    <div class="row g-5">
-                        <div class="col-md-6">
-                            <div class="partner__item wow fadeInUp" data-wow-delay="0.2s">
-                                <div class="partner__item-img">
-                                    <picture>
-                                        <source media="(max-width:767px)"
-                                            srcset="./assets/images/partner1-mb.png">
-                                        <img src="./assets/images/partner1.png" alt="">
-                                    </picture>
+                <div class="partner__item" data-value="achievement">
+                    <div class="partner__item-img">
+                        <picture>
+                            <source media="(max-width:767px)"
+                                srcset="./assets/images/partner1-mb.png">
+                            <img src="./assets/images/partner1.png" alt="">
+                        </picture>
 
+                    </div>
+                    <div class="partner__item-title">
+                        Our<br>Achievements
+                    </div>
+                </div>
+                <div class="partner__content-list" data-value="achievement">
+                    <div class="inner">
+                        <h3 class="title wow fadeInUp">
+                            Our Achievements
+                        </h3>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.3s">
+                            On the other hand, we denounce with righteous indignation and dislike
+                            men who are so beguiled and demoralized by the charms of pleasure of the
+                            moment
+                        </div>
+                        <div class="list-parter wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="row row-cols-4 g-md-5 g-2">
+                                <?php 
+                                 for ($i = 0; $i < 12; $i++) {
+                                 ?>
+                                <div class="col">
+                                    <div class="parter-img">
+                                        <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="partner__item-title">
-                                    Our<br>Achievements
-                                </div>
+                                <?php 
+                                 } 
+                                ?>
+
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="partner__item wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="partner__item-img">
-                                    <picture>
-                                        <source media="(max-width:767px)"
-                                            srcset="./assets/images/partner2-mb.png">
-                                        <img src="./assets/images/partner2.png" alt="">
-                                    </picture>
+                    </div>
+                </div>
+                <div class="partner__item" data-value="collaborator">
+                    <div class="partner__item-img">
+                        <picture>
+                            <source media="(max-width:767px)"
+                                srcset="./assets/images/partner2-mb.png">
+                            <img src="./assets/images/partner2.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="partner__item-title">
+                        Our<br>Collaborators
+                    </div>
+                </div>
+                <div class="partner__content-list" data-value="collaborator">
+                    <div class="inner">
+                        <h3 class="title wow fadeInUp">
+                            Our Collaborators
+                        </h3>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.3s">
+                            On the other hand, we denounce with righteous indignation and dislike
+                            men who are so beguiled and demoralized by the charms of pleasure of the
+                            moment
+                        </div>
+                        <div class="list-parter wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="row row-cols-4 g-md-5 g-2">
+                                <?php 
+                                 for ($i = 0; $i < 12; $i++) {
+                                 ?>
+                                <div class="col">
+                                    <div class="parter-img">
+                                        <img src="./assets/images/pn<?php echo $i+1;?>.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="partner__item-title">
-                                    Our<br>Collaborators
-                                </div>
+                                <?php 
+                                 } 
+                                ?>
+
                             </div>
                         </div>
                     </div>
