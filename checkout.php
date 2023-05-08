@@ -186,7 +186,7 @@ include "header.php";
                                     <td>
                                         <span>Nerman10</span>
                                     </td>
-                                    <td>
+                                    <td class="text-green">
                                         -$8.00 <a href="javascript:void">[Remove]</a>
                                     </td>
                                 </tr>
