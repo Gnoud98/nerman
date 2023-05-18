@@ -1215,17 +1215,17 @@ body {
             z-index: -1;
             opacity: 0;
             visibility: hidden;
-             width: 50%;
-             &.show {
+            width: 50%;
+            &.show {
                 transition: 2s ease;
                 z-index: 10;
                 opacity: 1;
                 visibility: visible;
                 position: relative;
-               width: 100%;
-               max-width: 55%;
+                width: 100%;
+                max-width: 55%;
             }
-           
+
             .inner {
                 padding: 7rem 5rem;
                 background-color: #ffffff;
@@ -1234,7 +1234,6 @@ body {
                     padding: 26px 15px;
                 }
             }
-            
         }
         .title {
             text-transform: uppercase;
@@ -1273,27 +1272,26 @@ body {
                 }
             }
         }
-        &-item{
+        &-item {
             @include Responsive(MD) {
                 padding: 10rem 15px 26px 15px;
-                .title{
+                .title {
                     font-family: "SVN-Brandon Grotesque";
                     font-weight: 700;
                     margin-bottom: 2rem;
                 }
-                .desc{
+                .desc {
                     margin-top: 2rem;
                 }
-
             }
         }
         @include Responsive(MD) {
-            .flickity-page-dots{
+            .flickity-page-dots {
                 top: 20px;
                 bottom: unset;
                 padding: 10px;
                 background-color: var(--primary-color);
-                .dot{
+                .dot {
                     background: #ffffff;
                     width: 25px;
                     height: 5px;
@@ -4485,5 +4483,186 @@ input[type="radio"]:checked {
             background-color: var(--primary-color);
             color: #ffffff;
         }
+    }
+}
+
+
+//contact
+
+.contact {
+    margin: 3.6rem 0 6.4rem 0;
+    &__form {
+        @include Responsive(MD) {
+            padding: 2.4rem 12px;
+            border-radius: 6px;
+            border: 1px solid #cbcbcb;
+        }
+        .sub-title {
+            color: #3e3e59;
+            margin-bottom: 1rem;
+        }
+        &-inner {
+            @include Responsive(XL) {
+                padding: 2.4rem;
+                border-radius: 6px;
+                border: 1px solid #cbcbcb;
+            }
+        }
+
+        textarea {
+            padding: 1.3rem 1.6rem;
+        }
+        button {
+            width: 18.3rem;
+            margin: 0;
+            font-size: 16px;
+            @include Responsive(MD) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__info {
+        @include Responsive(XL) {
+            margin-left: 2rem;
+            height: calc(100% - 6.6rem);
+        }
+        padding: 2.4rem;
+        border-radius: 6px;
+        border: 1px solid #cbcbcb;
+
+        &-desc {
+            color: #3e3e59;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &-main {
+            padding: 3rem 0 3rem 50px;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='36' height='36' rx='18' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.2892 13.8267C12.4142 13.5863 12.6655 13.4221 12.9552 13.4221H23.4552C23.7448 13.4221 23.9962 13.5863 24.1211 13.8267L18.2052 17.7707L12.2892 13.8267ZM10.7052 14.1577C10.7051 14.1659 10.705 14.1741 10.7052 14.1823V21.6721C10.7052 22.9147 11.7125 23.9221 12.9552 23.9221H23.4552C24.6978 23.9221 25.7052 22.9147 25.7052 21.6721V14.1823M24.2052 15.5734V21.6721C24.2052 22.0863 23.8694 22.4221 23.4552 22.4221H12.9552C12.5409 22.4221 12.2052 22.0863 12.2052 21.6721V15.5734L17.7891 19.2961C18.0411 19.464 18.3693 19.464 18.6212 19.2961L24.2052 15.5734ZM25.7051 14.1577C25.6974 12.9216 24.693 11.9221 23.4552 11.9221H12.9552C11.7173 11.9221 10.7129 12.9217 10.7052 14.1577' fill='white'/%3E%3C/svg%3E%0A");
+        }
+        a {
+            color: #3e3e59;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    &__map {
+        margin-bottom: 6rem;
+    }
+    &__faq {
+        margin-bottom: 6rem;
+        &-title {
+            @include Responsive(XL) {
+                padding: 3rem;
+                background: #fafafb;
+                border-radius: 8px;
+                height: 100%;
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(center);
+            }
+            .sup-title {
+                font-size: 2.4rem;
+                @include Responsive(SM) {
+                    font-size: 20px;
+                }
+            }
+            .title {
+                font-size: 6.4rem;
+                font-family: "SVN-Brandon Grotesque";
+                line-height: 1.2;
+                @include Responsive(MD) {
+                    font-size: 24px;
+                }
+            }
+        }
+        &-item {
+            padding: 2rem 3rem;
+            background: #fafafb;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            &:not(:last-child) {
+                margin-bottom: 14px;
+            }
+            .desc {
+                display: none;
+                font-weight: 300;
+                font-size: 17px;
+                @include Responsive(SM) {
+                    font-size: 15px;
+                }
+            }
+            &.active {
+                border: 1px solid #b9b9b9;
+                .contact__faq-name {
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+                .desc{
+                    margin-top: 2rem;
+                }
+            }
+        }
+        &-name {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 2.4rem;
+            cursor: pointer;
+            position: relative;
+            &:after,
+            &:before {
+                position: absolute;
+                cursor: pointer;
+                display: inline-block;
+                @extend %smooth-trans;
+                width: 2rem;
+                height: 2px;
+                background-color: var(--primary-color);
+                border-radius: 5px;
+                content: "";
+                right: 0;
+                top: 1.8rem;
+            }
+            &:after {
+                transform: rotate(90deg);
+            }
+            @include Responsive(SM) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.container__map-box {
+    position: relative;
+    width: 100%;
+    padding-top: 49%;
+    filter: grayscale(1);
+    @include Responsive(SM) {
+        padding-top: 70%;
+    }
+    iframe {
+        display: block;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.fs-40 {
+    font-size: 4rem;
+    @include Responsive(SM) {
+        font-size: 24px;
     }
 }

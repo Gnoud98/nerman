@@ -578,3 +578,13 @@ function arrangeLayoutPostDetail() {
   }
 }
 arrangeLayoutPostDetail();
+
+function showContentFAQ() {
+  $('.contact__faq-item').click(function () {
+    $(this).toggleClass('active');
+    $(this).find('.desc').slideToggle();
+    $(this).siblings().removeClass('active').find('.desc').slideUp();
+  })
+  $('.contact__faq-item:first-child').trigger('click')
+}
+showContentFAQ();
