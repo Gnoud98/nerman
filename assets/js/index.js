@@ -13,7 +13,6 @@
       showMiniCart();
       checkoutPage();
       sidebarPromotion();
-      handleHoverPartner();
     });
   };
 })(jQuery);
@@ -399,11 +398,11 @@ function checkoutPage() {
 
 function centerMenuPromotion() {
   var myScrollPos =
-    $(".promotion__menu-inner ul a.active").offset().left +
-    $(".promotion__menu-inner ul a.active").outerWidth(true) / 2 +
-    $(".promotion__menu-inner ul").scrollLeft() -
-    $(".promotion__menu-inner ul").width() / 2;
-  $(".promotion__menu-inner ul").animate({ scrollLeft: myScrollPos }, 200);
+  $(".promotion__menu-inner ul a.active").offset().left +
+  $(".promotion__menu-inner ul a.active").outerWidth(true) / 2 +
+  $(".promotion__menu-inner ul").scrollLeft() -
+  $(".promotion__menu-inner ul").width() / 2;
+  $(".promotion__menu-inner ul").animate({scrollLeft: myScrollPos}, 200);
 }
 function sidebarPromotion() {
   if ($(".promotion__menu").length) {
@@ -482,115 +481,100 @@ function sidebarPromotion() {
         stickyToggle(sticky, stickyWrapper, $(window));
       });
     }
+
   }
 }
 
 function customSliderFashion() {
-  if ($(window).width() > 767 && $(".article__fashion").length) {
-    var $slider2 = $(".article__fashion .article__list").flickity({
+  if ($(window).width() > 767 && $('.article__fashion').length) {
+    var $slider2 = $( '.article__fashion .article__list').flickity({  
       pageDots: true,
       prevNextButtons: false,
       wrapAround: true,
-      cellAlign: "left",
+      cellAlign:'left'
     });
-
-    // Instance
-    var $slider2Data = new Flickity(".article__fashion .article__list");
-    var $slider2Navigation = document.querySelector(
-      ".article__fashion .article__list"
-    );
-    // Elements
-    var $dotGroup = $(".article__fashion .flickity-page-dots");
-    var $dotSelected = $dotGroup.find(".dot");
-
-    // Previous
-    $(".slider-prev").on("click", function () {
-      var $this = $(this);
-      var $slider2Data = $slider2.data(".article__fashion .article__list");
-      $slider2.flickity("previous");
-    });
-
-    // Next
-    $(".slider-next").on("click", function () {
-      var $this = $(this);
-      var $slider2Data = $slider2.data(".article__fashion .article__list");
-      $slider2.flickity("next");
-    });
-
-    // Update selected dots
-    $slider2.on("select.flickity", function () {
-      $dotSelected.filter(".is-selected").removeClass(".is-selected");
-      $dotSelected.eq($slider2Data.selectedIndex).addClass(".is-selected");
-    });
-
-    // Select cell on button click
-    $dotGroup.on("click", ".dot", function () {
-      var index = $(this).index();
-      $slider2.data("select", index);
-    });
-    if ($(".flickity-enabled").hasClass("article__list")) {
-      $(".article__fashion .article__list .flickity-page-dots").addClass(
-        "buttons-enabled"
-      );
-      $(".flickity-page-dots.buttons-enabled").prepend(
-        '<li class="prev-wrapper">' +
-          '<span class="slider-prev"></span>' +
-          "</li>"
-      );
-
-      $(".flickity-page-dots.buttons-enabled").append(
-        '<li class="next-wrapper">' +
-          '<span class="slider-next"></span>' +
-          "</li>"
-      );
-
-      // Previous
-      $(".slider-prev").on("click", function () {
-        var $this = $(this);
-        var $slider2Data = $slider2.data(".article__fashion .article__list");
-        $slider2.flickity("previous");
-      });
-
-      // Next
-      $(".slider-next").on("click", function () {
-        var $this = $(this);
-        var $slider2Data = $slider2.data(".article__fashion .article__list");
-        $slider2.flickity("next");
-      });
-    }
+      
+        // Instance
+        var $slider2Data = new Flickity( '.article__fashion .article__list' );
+        var $slider2Navigation = document.querySelector('.article__fashion .article__list');
+        // Elements
+        var $dotGroup = $('.article__fashion .flickity-page-dots');
+        var $dotSelected = $dotGroup.find('.dot');
+      
+        // Previous
+        $('.slider-prev').on( 'click', function() {
+          var $this = $( this );
+          var $slider2Data = $slider2.data('.article__fashion .article__list'); 
+          $slider2.flickity('previous');
+        });     
+      
+        // Next
+        $('.slider-next').on( 'click', function() {
+          var $this = $( this );
+          var $slider2Data = $slider2.data('.article__fashion .article__list'); 
+          $slider2.flickity('next');
+        });
+     
+        // Update selected dots
+        $slider2.on( 'select.flickity', function() {
+          $dotSelected.filter('.is-selected')
+            .removeClass('.is-selected');
+          $dotSelected.eq( $slider2Data.selectedIndex )
+            .addClass('.is-selected');       
+          
+        });
+      
+       // Select cell on button click
+       $dotGroup.on( 'click', '.dot', function() {
+         var index = $(this).index();
+         $slider2.data( 'select', index );
+       });
+        if ($(".flickity-enabled").hasClass("article__list")) {
+            $(".article__fashion .article__list .flickity-page-dots").addClass("buttons-enabled");
+            $(".flickity-page-dots.buttons-enabled").prepend(
+    
+              '<li class="prev-wrapper">'
+              +'<span class="slider-prev"></span>' +
+              '</li>'
+            );
+    
+            $(".flickity-page-dots.buttons-enabled").append(
+    
+                '<li class="next-wrapper">' +
+                '<span class="slider-next"></span>' +
+                '</li>'     
+            );
+    
+          // Previous
+          $('.slider-prev').on( 'click', function() {
+            var $this = $( this );
+            var $slider2Data = $slider2.data('.article__fashion .article__list'); 
+            $slider2.flickity('previous');
+          });     
+    
+          // Next
+          $('.slider-next').on( 'click', function() {
+            var $this = $( this );
+            var $slider2Data = $slider2.data('.article__fashion .article__list'); 
+            $slider2.flickity('next');
+          });
+        }
   }
 }
 
 customSliderFashion();
 
 function arrangeLayoutPostDetail() {
-  if ($(window).width() < 991 && $(".post__content").length) {
-    let tocContainer = $(".table-of-content");
-    $(".post__heading").before(tocContainer);
-    tocContainer.wrapAll('<div class="container"></div>');
+  if ($(window).width() < 991 && $('.post__content').length) {
+    let tocContainer = $(".table-of-content"); 
+    $('.post__heading').before(tocContainer);
+    tocContainer.wrapAll('<div class="container"></div>')
     let newsletterContainer = $(".join-newsletter");
-    $(".post__content-desc").after(newsletterContainer);
-    let relatedPost = $(".related__post");
+    $('.post__content-desc').after(newsletterContainer);
+    let relatedPost = $('.related__post');
     newsletterContainer.after(relatedPost);
-    let sidebarTag = $(".sidebar-tags");
+    let sidebarTag = $('.sidebar-tags');
     relatedPost.after(sidebarTag);
   }
 }
 arrangeLayoutPostDetail();
-
-function handleHoverPartner() {
-  if ($(window).width() > 991 && $('.partner__content').length) {
-    $(".partner__item[data-value]").mouseenter(function () {
-      $(".partner__content-list[data-value]")
-        .removeClass("show");
-      $(".partner__content-list[data-value=" + $(this).attr("data-value") + "]")
-        .addClass("show");
-    });
-    $(".partner__content").mouseleave(function () {
-      $(".partner__content-list[data-value]")
-        .removeClass("show");
-      $(".partner__content-list[data-value='partner']")
-        .addClass("show");
-    });
-  }
-}

@@ -47,9 +47,9 @@ include "header.php";
                         HÀNG MỚI VỀ.
                     </h2>
                     <div class="box-count-down">
-                        <span class='hours'>18</span>
-                        <span class='minutes'>24</span>
-                        <span class='seconds'>00</span>
+                        <span class='hours'>00</span>
+                        <span class='minutes'>00</span>
+                        <span class='seconds'>20</span>
                     </div>
                 </div>
                 <a href="#" class="btn-viewmore wow fadeInUp" data-wow-delay="0.4s">

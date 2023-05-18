@@ -64,12 +64,12 @@ include "header.php";
                     <div class="account-bottom">
                         <div class="row">
                             <div class="col-6">
-                                <a href="">
+                                <a href="reset-password-1.php">
                                     Quên mật khẩu
                                 </a>
                             </div>
                             <div class="col-6">
-                                <a href="">
+                                <a href="dang-ky.php">
                                     Đăng ký ngay
                                 </a>
                             </div>

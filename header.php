@@ -59,7 +59,7 @@ include "libs/header-css.php";
                         <?php echo svg('search', '26','26') ?>
                     </li>
                     <li class="user-icon d-lg-block d-none">
-                        <a href="">
+                        <a href="dang-nhap.php">
                             <?php echo svg('user', '26','26') ?>
                         </a>
                     </li>
